@@ -1,0 +1,52 @@
+# Assignment 1 - General comments and adherence to hand-in format requirements
+0 / None points
+In the future, please include some explanation for why the math you have shown actually proves what you want.
+
+# 8.3
+10 / 10 points
+[+] Proves inequality
+[+] Proves equality for all values
+
+# 8.4
+10 / 10 points
+[+] Shows by direct evaluation (8 points)
+[+] Draws the directed graph (2 points)
+
+# 8.1
+6 / 10 points
+[+] Writes equation
+[+] Shows one condition
+[-] Using Bayes on p(a|d)p(b|d) and multiplying by p(d), you will get p(d|a)p(a)p(b|d), not p(a)p(b|d). As such your proof does not work.
+
+# 9.5
+3 / 10 points
+[-] Does not explain d-separations for parameters.
+    You correctly ignore the given parameters, but give no reason as to why this is ok.
+    In this context, the parameters are deterministic, and as such essentially become constants which can be ignored.
+[-] Your first equation for p(X,Z) is not correct. p(a)p(b) != p(a) unless p(b) = 1 which there is no indication of here.
+[+] Arrives at the correct results: can be factorized
+It was enough to argue that the condition holds simply from the graph given. The graph contains paths from every node to every other node. However, because the parameters are deterministic we can condition on them freely. Because the paths are all tail-to-tail, this then means that all paths between z_n and z_m are blocked, proving that they can factorise.
+
+# Old Faithful 1
+10 / 10 points
+[+] Plots the data (8 points)
+[+] Uses correct axis values (2 points)
+You should always include a descriptive title and axis labels to plots.
+
+# Old Faithful 2
+0 / 10 points
+[-] Variable initialization not explained
+[-] Explanation of algorithm / implementation lacking
+[-] Does not explain the stopping criterion
+
+# Old Faithful 3
+0 / 10 points
+[-] Does not plot scatter with marginal probabilities / responsibilities correctly
+[-] Does not explain the method to show the marginal / responsibilities
+
+# Old Faithful 4
+0 / 10 points
+[-] Does not show plots
+[-] Does not mention lack of consistency in converged results
+[-] Does not consider likelihood
+[-] Does not discuss overfitting

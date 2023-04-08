@@ -1,0 +1,49 @@
+# Assignment 2 - General comments and adherence to hand-in format requirements
+0 / None points
+[*]
+
+# 8.16
+4 / 10 points
+[-] The very first expression you write up for p(x_n|x_N) does not hold.
+    Summing a conditional probability over the conditional variable will give you numbers that can no longer be interpreted as probabilities since they do not necessarily add up to one.
+    Instead: by def of cond prob we have p(x_n|x_N) = p(x_n,x_N)/p(x_N). Now, we just need to show that the numerator and the denominator can, separately, be solved using the message chaining algorithm.  
+[+] Shows that p(x_N) can be solved efficiently.
+    Careful with typos, when showing p(x_N) you often switch to n where it should be N.
+[+] Some of the discussion of the message passing makes good sense, other parts are dependent on the mistaken equation in the beginning.
+
+# 8.27
+10 / 10 points
+[+] Good solution, table is correct
+[+] Good that you explicitly mention the values of x^{hat} and y^{hat}
+
+# 8.4
+9 / 10 points
+[+] You show correct expression for the bagged estimate
+[+] You correctly prove that the bagged estimate converges to original estimate
+[-] Some more explicit explanation needed for why the mean of the gaussian noise approaches zero as B approaches infinity (Law of Large Numbers)
+
+# 10.1
+10 / 10 points
+[+] Good solution, everything is correct
+
+# GraphicalModels.1
+0 / 10 points
+[-] Missing
+
+# GraphicalModels.2
+0 / 10 points
+[-] Missing
+
+# GraphicalModels.3
+0 / 10 points
+[-] Missing
+
+# CombiningMultipleLearners.1
+0 / 6 points
+[-] No indication of the train-val-test split ratio in the report
+
+# CombiningMultipleLearners.2
+3 / 24 points
+[+] You show results for the decision tree
+[-] The task was to compare the results of spam classification using the decision tree, a bagging method with decision tree as base learner and a boosting method with decision tree as base learners, where you had to implement the bagging and boosting methods yourself. 
+    Also, in general, there would need to be some description of the implementations in the report as well as discussion of hyperparameters.
